@@ -1,0 +1,261 @@
+@font-face{
+	src:url(fonts/MicelleReguler.otf);
+	font-family: "Micelle";
+}
+
+@font-face{
+	src:url(fonts/OpenSans.ttf);
+	font-family: "OpenSans";
+}
+
+@font-face{
+	src:url(fonts/AubreyPro.otf);
+	font-family: "Aubrey";
+}
+
+@font-face{
+	src:url("fonts/MorningBreeze-Light.otf");
+	font-family: "MorningBreeze";
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "MorningBreeze";
+}
+
+header{
+	background: #666;
+	height: 150px;
+	position: relative;
+}
+
+header h1{
+	font-size: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-family: "Aubrey";
+}
+
+#logo{
+	/*background: #000;*/
+	width: 300px;
+	height: 100px;
+	position: relative;
+	top: 25px;
+	left: 50px;
+	background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e6032cde-f8c2-46d3-bdc4-290f2ad343fe/dbh2fn3-870e6bf2-aaa3-4635-a513-87196c78271f.png/v1/fill/w_1024,h_267,strp/gravity_falls_logo__horizontal_version__by_ncontreras207_dbh2fn3-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjY3IiwicGF0aCI6IlwvZlwvZTYwMzJjZGUtZjhjMi00NmQzLWJkYzQtMjkwZjJhZDM0M2ZlXC9kYmgyZm4zLTg3MGU2YmYyLWFhYTMtNDYzNS1hNTEzLTg3MTk2Yzc4MjcxZi5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.nZSgzDghy8qkR9M7JjXs6k0KFmpmgxcjLdjSyBQRkxM);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+nav{
+	background: #777;
+	height: 50px;
+	text-align: center;
+}
+
+nav a{
+	line-height: 50px;
+	font-size: 26px;
+	margin: 0 10px;
+	text-decoration: none;
+	color: #fee;
+}
+
+nav a:hover{
+	color: #fc3;
+}
+
+ /*тело */
+section{
+	/*background: #999;*/
+	min-height: 400px;
+	position: relative;
+}
+
+section:nth-child(odd){
+	background: #999;
+}
+
+section:nth-child(even){
+	background: #888;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+	padding: 30px 0;
+}
+
+section h1{
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+section p{
+	text-align: justify;
+	font-size: 24px;
+	margin: 10px 0;
+}
+
+.img_left img{
+	float: left;
+	width: 400px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.img_right img{
+	float: right;
+	width: 400px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.clear{
+	clear: both;
+}
+
+#parallax, #parallax1{
+	height: 70vh;
+	background-image: url(https://media2.giphy.com/media/SwWrhzXVM7NdK/giphy.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	position: relative;
+}
+
+#parallax1{
+	background-image: url(https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/06/Gravity-Falls-Mystery-Shack.jpg);
+}
+
+#parallax div{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#parallax h1{
+	font-size: 80px;
+	color: transparent;
+	background: linear-gradient(90deg, rgba(159,56,85,1) 0%, rgba(245,142,15,1) 100%, rgba(253,29,29,1) 100%);
+	-webkit-background-clip: text;
+}
+
+#parallax h2{
+	font-size: 60px;
+	color: transparent;
+	background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+	-webkit-background-clip: text;
+}
+
+footer{
+	height: 200px;
+	background-image: url(pattern.jpg);
+	position: relative;
+	/*background-attachment: fixed;*/
+}
+.fade{
+	position: absolute;
+	background: #fee8;
+	inset:0;
+}
+footer > div > div{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #000;
+}
+
+footer h1{
+	font-size: 28px;
+}
+
+.slider{
+	width: 450px;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+	margin: 15px;
+}
+
+.navigation{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+
+.navigation label{
+	width: 30px;
+	height: 8px;
+	background: #000;
+	margin: 6px;
+	border-radius: 6px;
+	cursor: pointer;
+	opacity: 0.5;
+	transition: 0.4s;
+}
+
+.navigation label:hover{
+	opacity: 1;
+	transform: scale(1.1);
+}
+
+input[name="r"]{
+	visibility: hidden;
+	position: absolute;
+}
+
+.slides{
+	width: 400%;
+	height: 100%;
+	display: flex;
+}
+
+.slide{
+	width: 25%;
+	transition: 0.6s;
+}
+
+.slide img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#r1:checked ~ .s1, #r5:checked ~ .s1{
+	margin-left: 0;
+}
+
+#r2:checked ~ .s1, #r6:checked ~ .s1{
+	margin-left: -25%;
+}
+
+#r3:checked ~ .s1, #r7:checked ~ .s1{
+	margin-left: -50%;
+}
+
+#r4:checked ~ .s1, #r8:checked ~ .s1{
+	margin-left: -75%;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
